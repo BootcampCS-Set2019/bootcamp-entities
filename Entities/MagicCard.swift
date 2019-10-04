@@ -8,7 +8,6 @@
 import Foundation
 
 public struct MagicCard {
-    public init() {}
     
     public var name: String?
     public var names: [String]?

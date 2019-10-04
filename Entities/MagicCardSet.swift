@@ -6,7 +6,6 @@
 //  Copyright © 2019 BootcampCS-Set2019. All rights reserved.
 //
 public struct MagicCardSet {
-    public init() {}
     
     public var code: String?
     public var name: String?
@@ -17,4 +16,5 @@ public struct MagicCardSet {
     public var magicCardsInfoCode: String?
     public var booster: [[String]]?
 }
+
 
