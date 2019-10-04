@@ -5,8 +5,16 @@
 //  Created by matheus.filipe.bispo on 03/10/19.
 //  Copyright © 2019 BootcampCS-Set2019. All rights reserved.
 //
-
-import MTGSDKSwift
-
-public class MagicCardSet: CardSet {}
+public struct MagicCardSet {
+    public init() {}
+    
+    public var code: String?
+    public var name: String?
+    public var block: String?
+    public var type: String?
+    public var border: String?
+    public var releaseDate: String?
+    public var magicCardsInfoCode: String?
+    public var booster: [[String]]?
+}
 

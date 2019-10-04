@@ -8,40 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		BDAFF4B82346A479000256FF /* Entities.h in Headers */ = {isa = PBXBuildFile; fileRef = BDAFF4B62346A479000256FF /* Entities.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BDAFF4CB2346A54A000256FF /* MTGSDKSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDAFF4C52346A53A000256FF /* MTGSDKSwift.framework */; };
 		BDAFF4CD2346A5BC000256FF /* MagicCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAFF4CC2346A5BC000256FF /* MagicCard.swift */; };
 		BDAFF4CF2346B87E000256FF /* MagicCardSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAFF4CE2346B87E000256FF /* MagicCardSet.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		BDAFF4C42346A53A000256FF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BDAFF4BE2346A53A000256FF /* MTGSDKSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5BD04DA91E64943C00E5ED27;
-			remoteInfo = MTGSDKSwift;
-		};
-		BDAFF4C62346A53A000256FF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BDAFF4BE2346A53A000256FF /* MTGSDKSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5BD04DB21E64943C00E5ED27;
-			remoteInfo = MTGSDKSwiftTests;
-		};
-		BDAFF4C82346A53A000256FF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BDAFF4BE2346A53A000256FF /* MTGSDKSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5B87D68420596D6B0098553C;
-			remoteInfo = TestApplication;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		BDAFF4B32346A479000256FF /* Entities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Entities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDAFF4B62346A479000256FF /* Entities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Entities.h; sourceTree = "<group>"; };
 		BDAFF4B72346A479000256FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BDAFF4BE2346A53A000256FF /* MTGSDKSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MTGSDKSwift.xcodeproj; path = MTGSDKSwift/MTGSDKSwift.xcodeproj; sourceTree = "<group>"; };
 		BDAFF4CC2346A5BC000256FF /* MagicCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicCard.swift; sourceTree = "<group>"; };
 		BDAFF4CE2346B87E000256FF /* MagicCardSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicCardSet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,7 +25,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDAFF4CB2346A54A000256FF /* MTGSDKSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,7 +34,6 @@
 		BDAFF4A92346A479000256FF = {
 			isa = PBXGroup;
 			children = (
-				BDAFF4BE2346A53A000256FF /* MTGSDKSwift.xcodeproj */,
 				BDAFF4B52346A479000256FF /* Entities */,
 				BDAFF4B42346A479000256FF /* Products */,
 				BDAFF4CA2346A54A000256FF /* Frameworks */,
@@ -85,16 +57,6 @@
 				BDAFF4CE2346B87E000256FF /* MagicCardSet.swift */,
 			);
 			path = Entities;
-			sourceTree = "<group>";
-		};
-		BDAFF4BF2346A53A000256FF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				BDAFF4C52346A53A000256FF /* MTGSDKSwift.framework */,
-				BDAFF4C72346A53A000256FF /* MTGSDKSwiftTests.xctest */,
-				BDAFF4C92346A53A000256FF /* TestApplication.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		BDAFF4CA2346A54A000256FF /* Frameworks */ = {
@@ -161,42 +123,12 @@
 			mainGroup = BDAFF4A92346A479000256FF;
 			productRefGroup = BDAFF4B42346A479000256FF /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = BDAFF4BF2346A53A000256FF /* Products */;
-					ProjectRef = BDAFF4BE2346A53A000256FF /* MTGSDKSwift.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				BDAFF4B22346A479000256FF /* Entities */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		BDAFF4C52346A53A000256FF /* MTGSDKSwift.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = MTGSDKSwift.framework;
-			remoteRef = BDAFF4C42346A53A000256FF /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		BDAFF4C72346A53A000256FF /* MTGSDKSwiftTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = MTGSDKSwiftTests.xctest;
-			remoteRef = BDAFF4C62346A53A000256FF /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		BDAFF4C92346A53A000256FF /* TestApplication.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = TestApplication.app;
-			remoteRef = BDAFF4C82346A53A000256FF /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		BDAFF4B12346A479000256FF /* Resources */ = {
