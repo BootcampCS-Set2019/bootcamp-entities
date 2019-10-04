@@ -9,12 +9,11 @@ public struct MagicCardSet {
     
     public var code: String?
     public var name: String?
-    public var block: String?
-    public var type: String?
-    public var border: String?
-    public var releaseDate: String?
-    public var magicCardsInfoCode: String?
-    public var booster: [[String]]?
+    
+    public init(code: String?, name: String?) {
+        self.code = code
+        self.name = name
+    }
 }
 
 
