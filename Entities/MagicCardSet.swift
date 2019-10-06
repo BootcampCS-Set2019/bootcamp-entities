@@ -11,6 +11,12 @@ public struct MagicCardSet: Codable, Equatable {
     public let name: String
     public let releaseDate: String
 
+    public init(code: String, name: String, releaseDate: String) {
+        self.code = code
+        self.name = name
+        self.releaseDate = releaseDate
+    }
+
     public static func ==(lhs: MagicCardSet, rhs: MagicCardSet) -> Bool {
         return lhs.code == rhs.code
     }
