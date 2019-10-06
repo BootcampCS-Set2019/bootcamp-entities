@@ -5,7 +5,15 @@
 //  Created by matheus.filipe.bispo on 03/10/19.
 //  Copyright © 2019 BootcampCS-Set2019. All rights reserved.
 //
-public struct MagicCardSet: Codable, Equatable {
+public struct CardSets: Codable {
+    var sets: [CardSet]
+
+    public init(sets: [CardSet]) {
+        self.sets = sets
+    }
+}
+
+public struct CardSet: Codable, Equatable {
     
     public let code: String
     public let name: String
@@ -17,7 +25,7 @@ public struct MagicCardSet: Codable, Equatable {
         self.releaseDate = releaseDate
     }
 
-    public static func ==(lhs: MagicCardSet, rhs: MagicCardSet) -> Bool {
+    public static func ==(lhs: CardSet, rhs: CardSet) -> Bool {
         return lhs.code == rhs.code
     }
 }

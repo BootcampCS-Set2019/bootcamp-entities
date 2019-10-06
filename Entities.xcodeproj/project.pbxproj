@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BDA312F7234A1B31005E2F84 /* CardTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA312F6234A1B31005E2F84 /* CardTypes.swift */; };
 		BDAFF4B82346A479000256FF /* Entities.h in Headers */ = {isa = PBXBuildFile; fileRef = BDAFF4B62346A479000256FF /* Entities.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BDAFF4CD2346A5BC000256FF /* MagicCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAFF4CC2346A5BC000256FF /* MagicCard.swift */; };
-		BDAFF4CF2346B87E000256FF /* MagicCardSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAFF4CE2346B87E000256FF /* MagicCardSet.swift */; };
+		BDAFF4CD2346A5BC000256FF /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAFF4CC2346A5BC000256FF /* Card.swift */; };
+		BDAFF4CF2346B87E000256FF /* CardSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAFF4CE2346B87E000256FF /* CardSet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BDA312F6234A1B31005E2F84 /* CardTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTypes.swift; sourceTree = "<group>"; };
 		BDAFF4B32346A479000256FF /* Entities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Entities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDAFF4B62346A479000256FF /* Entities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Entities.h; sourceTree = "<group>"; };
 		BDAFF4B72346A479000256FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BDAFF4CC2346A5BC000256FF /* MagicCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicCard.swift; sourceTree = "<group>"; };
-		BDAFF4CE2346B87E000256FF /* MagicCardSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicCardSet.swift; sourceTree = "<group>"; };
+		BDAFF4CC2346A5BC000256FF /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		BDAFF4CE2346B87E000256FF /* CardSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +55,9 @@
 			children = (
 				BDAFF4B62346A479000256FF /* Entities.h */,
 				BDAFF4B72346A479000256FF /* Info.plist */,
-				BDAFF4CC2346A5BC000256FF /* MagicCard.swift */,
-				BDAFF4CE2346B87E000256FF /* MagicCardSet.swift */,
+				BDAFF4CC2346A5BC000256FF /* Card.swift */,
+				BDAFF4CE2346B87E000256FF /* CardSet.swift */,
+				BDA312F6234A1B31005E2F84 /* CardTypes.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -145,8 +148,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDAFF4CF2346B87E000256FF /* MagicCardSet.swift in Sources */,
-				BDAFF4CD2346A5BC000256FF /* MagicCard.swift in Sources */,
+				BDA312F7234A1B31005E2F84 /* CardTypes.swift in Sources */,
+				BDAFF4CF2346B87E000256FF /* CardSet.swift in Sources */,
+				BDAFF4CD2346A5BC000256FF /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
