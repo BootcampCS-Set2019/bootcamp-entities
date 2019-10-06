@@ -7,17 +7,11 @@
 //
 import Foundation
 
-public struct MagicCard {
+public struct MagicCard: Codable, Equatable {
     
-    public var name: String?
-    public var imageUrl: String?
-    public var id: String?
-
-    public init(name: String?, imageUrl: String?, id: String?) {
-        self.name = name
-        self.imageUrl = imageUrl
-        self.id = id
-    }
+    public let name: String
+    public let imageUrl: String
+    public let id: String
     
     public static func ==(lhs: MagicCard, rhs: MagicCard) -> Bool {
         return lhs.id == rhs.id
