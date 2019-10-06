@@ -8,6 +8,10 @@
 
 import Foundation
 
-struct CardTypes: Codable {
+public struct CardTypes: Codable {
     var types: [String]
+
+    public init(types: [String]) {
+        self.types = types
+    }
 }
