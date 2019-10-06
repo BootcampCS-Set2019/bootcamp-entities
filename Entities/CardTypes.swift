@@ -9,7 +9,7 @@
 import Foundation
 
 public struct CardTypes: Codable {
-    var types: [String]
+    public var types: [String]
 
     public init(types: [String]) {
         self.types = types

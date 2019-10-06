@@ -6,7 +6,7 @@
 //  Copyright © 2019 BootcampCS-Set2019. All rights reserved.
 //
 public struct CardSets: Codable {
-    var sets: [CardSet]
+    public var sets: [CardSet]
 
     public init(sets: [CardSet]) {
         self.sets = sets
