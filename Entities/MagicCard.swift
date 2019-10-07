@@ -12,11 +12,13 @@ public struct MagicCard: Codable, Equatable {
     public let id: String
     public let name: String
     public let imageUrl: String?
+    public let types: [String]
 
-    public init( id: String, name: String, imageUrl: String) {
+    public init( id: String, name: String, imageUrl: String, types: [String]) {
         self.id = id
         self.name = name
         self.imageUrl = imageUrl
+        self.types = types
     }
     
     public static func ==(lhs: MagicCard, rhs: MagicCard) -> Bool {
