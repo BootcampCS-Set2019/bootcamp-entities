@@ -44,21 +44,18 @@ public class Card: NSManagedObject, Codable {
         super.init(entity: entity, insertInto: context)
     }
     public required convenience init(from decoder: Decoder) throws {
-        guard let codingUserInfoKeyManagedObjectContext = CodingUserInfoKey(rawValue: "context"),
+        if let codingUserInfoKeyManagedObjectContext = CodingUserInfoKey(rawValue: "context"),
             let managedObjectContext = decoder.userInfo[codingUserInfoKeyManagedObjectContext] as? NSManagedObjectContext,
-            let entity = NSEntityDescription.entity(forEntityName: "Card", in: managedObjectContext) else {
-                fatalError("Failed to decode User")
+            let entity = NSEntityDescription.entity(forEntityName: "Card", in: managedObjectContext) {
+            self.init(entity: entity, insertInto: managedObjectContext)
+        } else {
+            let container = try decoder.container(keyedBy: CodingKeys.self)
+            self.id = try container.decodeIfPresent(String.self, forKey: .id)!
+            self.name = try container.decodeIfPresent(String.self, forKey: .name)!
+            self.imageUrl = try container.decodeIfPresent(String.self, forKey: .imageURL)
+            self.set = try container.decodeIfPresent(String.self, forKey: .set)!
+            self.type = try container.decodeIfPresent(Array<String>.self, forKey: .type)!
         }
-
-        self.init(entity: entity, insertInto: managedObjectContext)
-
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.id = try container.decodeIfPresent(String.self, forKey: .id)!
-        self.name = try container.decodeIfPresent(String.self, forKey: .name)!
-        self.imageUrl = try container.decodeIfPresent(String.self, forKey: .imageURL)
-        self.set = try container.decodeIfPresent(String.self, forKey: .set)!
-        self.type = try container.decodeIfPresent(Array<String>.self, forKey: .type)!
-
     }
 
     // MARK: - Encodable
