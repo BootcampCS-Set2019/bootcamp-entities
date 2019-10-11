@@ -37,7 +37,7 @@ public class Card: NSObject, Codable {
 
 
 
-    
+
     public static func ==(lhs: Card, rhs: Card) -> Bool {
         return lhs.id == rhs.id
     }
