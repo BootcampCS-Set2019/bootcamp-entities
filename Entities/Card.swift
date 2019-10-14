@@ -25,7 +25,7 @@ public class Card: NSObject, Codable {
     public var types: [String]
     public var imageData: Data?
 
-    public init( id: String, name: String, imageUrl: String, set: String, types: [String], image: UIImage) {
+    public init(id: String, name: String, imageUrl: String, set: String, types: [String], image: UIImage) {
         self.id = id
         self.name = name
         self.imageUrl = imageUrl
