@@ -7,7 +7,6 @@
 //
 import Foundation
 import UIKit
-import CoreData
 
 public struct Cards: Codable {
     public let cards: [Card]
