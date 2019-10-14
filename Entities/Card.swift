@@ -16,7 +16,7 @@ public struct Cards: Codable {
     }
 }
 
-public class Card: NSObject, Codable {
+public struct Card: Codable {
 
     public var id: String
     public var name: String
@@ -33,9 +33,6 @@ public class Card: NSObject, Codable {
         self.types = types
         self.imageData = image.jpegData(compressionQuality: 1)
     }
-
-
-
 
     public static func ==(lhs: Card, rhs: Card) -> Bool {
         return lhs.id == rhs.id
